@@ -17,4 +17,8 @@
 - Once you run the App follow the instructions on the terminal
 ## Technology Used
 - Python3.6
+## BDD
+ 1. cu - Creates a new account
+ 2. lg - logs  in
+ 3. ex - Exit the ap
 
