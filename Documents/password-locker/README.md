@@ -21,10 +21,12 @@
  1. cu - Creates a new account
  2. lg - logs  in
  3. ex - Exit the ap
- 
+
  The user will be met with the following commands while signing in:
 
  1. ap - Add password
  3. cp - Copy password to clipboard
  4. lo - Log out
-
+## Contacts Info
+- odoyograce23@gmail.com
+- Github-odoyoquee
