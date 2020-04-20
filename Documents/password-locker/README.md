@@ -15,4 +15,6 @@
 - Test application using $ python3.7 user_test.py
 
 - Once you run the App follow the instructions on the terminal
+## Technology Used
+- Python3.6
 
