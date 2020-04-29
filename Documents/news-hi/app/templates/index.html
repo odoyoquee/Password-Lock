@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro %}
+
+{% block content%}
+<div class="container-fluid">
+		<!-- Business News Section  -->
+        <h3 class="modal-header"> Top Business News Sources</h3>
+
+
+        {{ macro.displaySourceList(sources)}}
+
+        <!-- Business News Section  -->
+         
+        <h3 class="modal-header"> Top Technology News Sources</h3>
+
+
+        {{ macro.displaySourceList(technology_sources)}}
+
+        <!-- Entertainment News Section  -->
+         
+        <h3 class="modal-header"> Top Entertainment News Sources</h3>
+
+
+        {{ macro.displaySourceList(entertainment_sources)}}
+
+        <!-- Entertainment News Section  -->
+         
+        <h3 class="modal-header"> Top Sports News Sources</h3>
+
+
+        {{ macro.displaySourceList(sports_sources)}}
+	
+</div>
+
+
+{%endblock%}

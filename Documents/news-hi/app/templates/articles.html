@@ -1,0 +1,49 @@
+{% extends 'base.html'%}
+{% block content%}
+<div class="container-fluid">
+    <br>
+	<!-- Popular movie section  -->
+        <figure class="container text-center">
+            <h3 class="card-header text-monospace"> Top Headlines</h3>
+        </figure>
+        {% for article_row in articles | batch(4)%}
+
+	        <div class="row">
+	       
+		        {% for article in article_row %}
+
+		        	<div class="col-md-3" style="margin-bottom: 5px">
+				        <div class="card text-center mdb-color lighten-3">
+				        <a href="{{article.url}}" target="_blank">
+						      <img src="{{article.image}}" alt="{{article.title}}" class="img-fluid"
+                                   style="height:200px; width:410px">
+						      </a>
+						      <div class="card-title text-truncate">
+						        <h4><a href="{{article.url}}" target="_blank">{{article.title}}</a></h4>
+						      </div>
+                                <div class="card-body">
+                                    <p>{{article.description | truncate(80)}}</p>
+						        <a class="btn btn-outline-secondary color" href="{{article.url}}" target="_blank"> Read More</a>
+                                </div>
+						      <div class="footer text-muted">
+						      Published at: {{article.date}}
+								
+							</div>
+	  					</div>
+
+
+			     	</div>
+			     	
+		        {% endfor %}
+	        
+	        </div>
+         
+        {% endfor %}
+        
+	
+</div>
+
+
+{%endblock%}
+
+ 
